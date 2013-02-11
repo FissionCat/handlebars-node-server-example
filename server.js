@@ -10,8 +10,7 @@ function onRequest(req, res) {
 		message : "Hello world!"
 	};
 
-	// Must do .toString on template when using readFileSync, or it doesn't work
-	var pageBuilder = handlebars.compile(template.toString());
+	var pageBuilder = handlebars.compile(template);
 	var pageText = pageBuilder(source);
 	res.writeHead(200, {"Context-Type": "text/html"});
 	res.write(pageText);
