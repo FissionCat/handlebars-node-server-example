@@ -2,7 +2,7 @@ var http = require("http");
 var fs = require("fs");
 var handlebars = require("handlebars");
 
-template = fs.readFileSync("./index.html", "utf8");
+var template = fs.readFileSync("./index.html", "utf8");
 
 function onRequest(req, res) {
 
