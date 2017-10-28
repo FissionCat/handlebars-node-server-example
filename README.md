@@ -2,12 +2,18 @@
 
 ## Requirements
 
+Node.js must be installed: [https://nodejs.org](https://nodejs.org)
+
 Install the handlebars module:
-> npm install handlebars
+```
+npm install
+```
 
 ## Running the server
 
-> node server.js
+```
+npm start
+```
 
 ## Viewing the result
 
